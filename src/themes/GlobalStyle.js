@@ -1,5 +1,5 @@
 import { createGlobalStyle } from "styled-components";
-import * as theme from "./ThemeSwitcher/theme";
+import * as theme from "./theme";
 
 export const GlobalStyle = createGlobalStyle`
   html {

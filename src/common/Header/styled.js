@@ -1,25 +1,29 @@
 import styled from "styled-components";
-
 import { Navbar } from "react-bootstrap";
 import { NavLink } from "react-router-dom";
 
-export const StyledNavbar = styled(Navbar).attrs(() => ({
-  bg: "dark",
-  variant: "dark",
+export const StyledNavbar = styled(Navbar).attrs(props => ({
+  bg: props.theme.colors.bg,
+  variant: props.theme.colors.variant,
   expand: "lg",
   fixed: "top",
 }))``;
 
 export const StyledNavBrand = styled(Navbar)`
   transition: 0.3s;
-  color: white;
+  color: ${({ theme }) => theme.colors.styledNavLink};
 
   &:hover {
-    color: black;
+    color: ${({ theme }) => theme.colors.styledNavLinkHover};
   }
 `;
 
-
+export const Image = styled.img.attrs(props => ({
+  src: props.theme.icon,
+  height: "30",
+  className: "d-inline-block align-top",
+  alt: "Navbar logo",
+}))``;
 
 export const StyledNavToggle = styled(Navbar)`
   transition: 0.3s;
@@ -32,10 +36,10 @@ export const StyledNavToggle = styled(Navbar)`
 `;
 
 export const StyledNavLink = styled(NavLink)`
-  color: white;
+  color: ${({ theme }) => theme.colors.styledNavLink};
   transition: 0.3s;
     
   &:hover {
-    color: black;
+    color: ${({ theme }) => theme.colors.styledNavLinkHover};
   }
 `;

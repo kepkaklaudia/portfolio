@@ -8,10 +8,12 @@ import About from './pages/About';
 import Gallery from './pages/Gallery';
 import Projects from './pages/Projects';
 import Header from './common/Header';
+import { GlobalStyle } from './themes/GlobalStyle';
 
 function App() {
   return (
     <ThemeProvider>
+      <GlobalStyle />
     <Container>
       <BrowserRouter>
       <Header></Header>

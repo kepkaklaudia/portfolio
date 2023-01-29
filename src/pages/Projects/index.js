@@ -18,10 +18,23 @@ import {
   SiStyledcomponents
 } from "react-icons/si";
 import { ImGit } from "react-icons/im";
-import { Icon } from "./styled";
+import { Icon, StyledButton, StyledCard } from "./styled";
 import { nanoid } from 'nanoid';
+import { useEffect } from "react";
+import { useDispatch, useSelector } from "react-redux";
+import { fetchRepos, selectRepos, selectReposStatus } from "./reposSlice";
+import Card from 'react-bootstrap/Card';
+import { Row, Col } from "react-bootstrap";
 
 const Projects = () => {
+  const dispatch = useDispatch();
+  const repos = useSelector(selectRepos);
+  const status = useSelector(selectReposStatus);
+
+  useEffect(() => {
+    dispatch(fetchRepos());
+  }, [dispatch])
+
   return (
     <>
         <div
@@ -52,6 +65,59 @@ const Projects = () => {
             </Icon>
           ))}
         </div>
+        {status === "loading" ? "Loading" :
+          status === "error" ? "Error" :
+            <Row
+              xs={1}
+              md={2}
+              lg={3}
+              className="my-4"
+            >
+              {repos.map(repo => (
+                repo.homepage &&
+                <Col
+                key={nanoid()}
+                >
+                  <Card
+                    as={StyledCard}
+                  >
+                    <Card.Body>
+                      <Card.Title
+                        className="text-capitalize"
+                      >
+                        {repo.name.replaceAll("-", " ")}
+                      </Card.Title>
+                      <Card.Text
+                        style={{ overflow: "auto", height: "150px" }}
+                      >
+                        {repo.description}
+                      </Card.Text>
+                      <Row>
+                        <Col>
+                          <StyledButton
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            href={repo.homepage}
+                          >
+                            Demo
+                          </StyledButton>
+                        </Col >
+                        <Col>
+                          <StyledButton
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            href={repo.html_url}
+                          >
+                            Code
+                          </StyledButton>
+                        </Col>
+                      </Row>
+                    </Card.Body>
+                  </Card>
+                </Col>
+              ))}
+            </Row>
+        }
     </>
   )
 };

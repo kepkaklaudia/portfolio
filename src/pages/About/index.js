@@ -3,7 +3,7 @@ import Accordion from 'react-bootstrap/Accordion';
 
 const About = () => {
   return (
-      <Accordion className="mb-4">
+      <Accordion className="mb-4 mx-4">
         <Accordion.Item eventKey="0">
           <Accordion.Button as={StyledButton}>
             Jump into the world of programming

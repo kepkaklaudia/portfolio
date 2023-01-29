@@ -25,6 +25,7 @@ import { useDispatch, useSelector } from "react-redux";
 import { fetchRepos, selectRepos, selectReposStatus } from "./reposSlice";
 import Card from 'react-bootstrap/Card';
 import { Row, Col } from "react-bootstrap";
+import { Loader } from "../../common/Loader";
 
 const Projects = () => {
   const dispatch = useDispatch();
@@ -65,7 +66,7 @@ const Projects = () => {
             </Icon>
           ))}
         </div>
-        {status === "loading" ? "Loading" :
+        {status === "loading" ? <Loader></Loader> :
           status === "error" ? "Error" :
             <Row
               xs={1}

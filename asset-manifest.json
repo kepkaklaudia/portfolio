@@ -1,9 +1,22 @@
 {
   "files": {
     "main.css": "/portfolio/static/css/main.073c9b0a.css",
-    "main.js": "/portfolio/static/js/main.34d998a1.js",
+    "main.js": "/portfolio/static/js/main.91850b8a.js",
     "static/js/787.1ed0c42c.chunk.js": "/portfolio/static/js/787.1ed0c42c.chunk.js",
+    "static/media/Welcome.png": "/portfolio/static/media/Welcome.e3af00728c719e0adfd7.png",
+    "static/media/Milano.jpg": "/portfolio/static/media/Milano.98213f235a1e1ac145d7.jpg",
+    "static/media/Spain4.jpg": "/portfolio/static/media/Spain4.b91ae50c0ef07b5efebe.jpg",
     "static/media/Extra.png": "/portfolio/static/media/Extra.6b2e11e0b12aa71cc04e.png",
+    "static/media/LaSalette.jpg": "/portfolio/static/media/LaSalette.c4b90a1258ba7408d12d.jpg",
+    "static/media/Cracow.jpg": "/portfolio/static/media/Cracow.647e4151103be03f9468.jpg",
+    "static/media/Portugal.jpg": "/portfolio/static/media/Portugal.bb2479e35dee97d78bcf.jpg",
+    "static/media/Spain2.jpg": "/portfolio/static/media/Spain2.bc151f9543579f4271b5.jpg",
+    "static/media/Spain3.jpg": "/portfolio/static/media/Spain3.b31215bebe83732a36b8.jpg",
+    "static/media/France1.jpg": "/portfolio/static/media/France1.f0c28bcf3fadb31651d4.jpg",
+    "static/media/Germany.jpg": "/portfolio/static/media/Germany.1196dd5ed2b253c1a080.jpg",
+    "static/media/Italy.jpg": "/portfolio/static/media/Italy.d1a13a7fd05a766883eb.jpg",
+    "static/media/France.jpg": "/portfolio/static/media/France.4f94c22ffeb6de0d7761.jpg",
+    "static/media/Spain.jpg": "/portfolio/static/media/Spain.ab745f99fe88c4aae6b4.jpg",
     "static/media/OrangeK.svg": "/portfolio/static/media/OrangeK.6908bf717d8a0480443c05e3fefee713.svg",
     "static/media/TealK.svg": "/portfolio/static/media/TealK.745e063178e93fff54509778913a5959.svg",
     "static/media/MagentaK.svg": "/portfolio/static/media/MagentaK.86b21f85af6afac9ca2e0874fad8054c.svg",
@@ -11,11 +24,11 @@
     "static/media/VeriPeriK.svg": "/portfolio/static/media/VeriPeriK.a02cd37fa9278890ac9c8bed07f8c2f7.svg",
     "index.html": "/portfolio/index.html",
     "main.073c9b0a.css.map": "/portfolio/static/css/main.073c9b0a.css.map",
-    "main.34d998a1.js.map": "/portfolio/static/js/main.34d998a1.js.map",
+    "main.91850b8a.js.map": "/portfolio/static/js/main.91850b8a.js.map",
     "787.1ed0c42c.chunk.js.map": "/portfolio/static/js/787.1ed0c42c.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.073c9b0a.css",
-    "static/js/main.34d998a1.js"
+    "static/js/main.91850b8a.js"
   ]
 }

@@ -1,6 +1,6 @@
 import { Row, Col, Container } from "react-bootstrap";
 import { Heading, Title, Subtitle } from "./styled";
-import Welcome from "../../images/Welcome.png";
+import Welcome from "./images/Welcome.png";
 import { motion } from "framer-motion";
 
 const Home = () => {

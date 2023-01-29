@@ -1,4 +1,5 @@
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import { ThemeProvider } from "styled-components";
 import './App.css';
 import { Container } from 'react-bootstrap';
 import Home from './pages/Home';
@@ -10,6 +11,7 @@ import Header from './common/Header';
 
 function App() {
   return (
+    <ThemeProvider>
     <Container>
       <BrowserRouter>
       <Header></Header>
@@ -22,6 +24,7 @@ function App() {
         </Routes>
       </BrowserRouter>
     </Container>
+      </ ThemeProvider>
   );
 }
 

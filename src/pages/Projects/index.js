@@ -26,6 +26,7 @@ import { fetchRepos, selectRepos, selectReposStatus } from "./reposSlice";
 import Card from 'react-bootstrap/Card';
 import { Row, Col } from "react-bootstrap";
 import { Loader } from "../../common/Loader";
+import { Error } from "./Error";
 
 const Projects = () => {
   const dispatch = useDispatch();
@@ -66,8 +67,8 @@ const Projects = () => {
             </Icon>
           ))}
         </div>
-        {status === "loading" ? <Loader></Loader> :
-          status === "error" ? "Error" :
+        {status === "loading" ? <Loader /> :
+          status === "error" ? <Error /> :
             <Row
               xs={1}
               md={2}

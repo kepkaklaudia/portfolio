@@ -15,3 +15,7 @@ export const StyledButton = styled(Accordion)`
     background-image: var(--bs-accordion-btn-icon);
  }
 `;
+
+export const Heading = styled.h2`
+  font-size: 20px;
+`;

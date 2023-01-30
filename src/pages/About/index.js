@@ -1,4 +1,4 @@
-import { LineThrough, StyledButton } from "./styled";
+import { Heading, LineThrough, StyledButton } from "./styled";
 import Accordion from 'react-bootstrap/Accordion';
 import { Motion } from "./Motion";
 
@@ -47,21 +47,21 @@ const About = () => {
               A little bit about my hobbies
             </Accordion.Button>
             <Accordion.Body>
-              <h5>
+              <Heading>
                 I'm really passionate about sport!
-              </h5>
+              </Heading>
               <p>
                 A few years ago I trained triathlon, but now I do fitness every day at home. I believe that sport helps not only with physical health, but also in taking care of mental health, peace of mind and soul, and maintaining discipline. I know a little bit about machines so i can confidently say that i am a well-oiled machine!
               </p>
-              <h5>
+              <Heading>
                 I'm interested in baking and cooking.
-              </h5>
+              </Heading>
               <p>
                 I love testing new recipes and experimenting with them. When i travel i like to taste the local cuisine, discover new flavors and add them to my everyday dishes
               </p>
-              <h5>
+              <Heading>
                 I'm crazy about travelling!
-              </h5>
+              </Heading>
               <p>
                 I'm crazy about travelling! When we decide to travel we can learn about new cultures, ways of life and habits of other people. We can see the world as they see it because we are in their natural environment. For a moment we are part of another world, so we can develop ourselves, acquire deeper understanding and broaden our horizons.
               </p>

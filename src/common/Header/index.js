@@ -5,7 +5,7 @@ const Header = () => {
   return (
     <StyledNavbar as={Navbar} collapseOnSelect >
       <Container>
-        <StyledNavBrand as={Navbar.Brand} href="/">
+        <StyledNavBrand as={Navbar.Brand} href="https://kepkaklaudia.github.io/portfolio/">
           <Image />{' '} Klaudia Kępka
         </StyledNavBrand>
         <StyledNavToggle as={Navbar.Toggle} />

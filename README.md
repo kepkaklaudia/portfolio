@@ -53,10 +53,6 @@ Instead, it will copy all the configuration files and the transitive dependencie
 You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
 
 ## Technologies used
-<img src="images/myIcons/html.png" height="90"/> <img src="images/myIcons/css.png" height="90"/> <img src="images/myIcons/js.png" height="90"/> <img src="images/myIcons/es6.png" height="90"/> 
+<img src="images/myIcons/html.png" height="90"/> <img src="images/myIcons/css.png" height="90"/> <img src="images/myIcons/js.png" height="90"/> <img src="images/myIcons/es6.png" height="90"/> <img src="images/myIcons/norm.png" height="90"/> <img src="images/myIcons/git.png" height="90"/>  <img src="images/myIcons/styledComponents.png" height="90"/> <img src="images/myIcons/framerMotion.png" height="90"/>
 
-<img src="images/myIcons/norm.png" height="90"/> <img src="images/myIcons/git.png" height="90"/> <img src="images/myIcons/react.png" height="90"/> <img src="images/myIcons/redux.png" height="90"/>
-
-<img src="images/myIcons/api.png" height="90"/> <img src="images/myIcons/bootstrap.png" height="90"/> <img src="images/myIcons/framerMotion.png" height="90"/> <img src="images/myIcons/reactBootstrap.png" height="90"/> 
-
-<img src="images/myIcons/reactRouter.png" height="90"/> <img src="images/myIcons/reduxSaga.png" height="90"/> <img src="images/myIcons/reduxToolkit.png" height="90"/> <img src="images/myIcons/styledComponents.png" height="90"/>
+<img src="images/myIcons/react.png" height="90"/> <img src="images/myIcons/reactRouter.png" height="90"/> <img src="images/myIcons/redux.png" height="90"/> <img src="images/myIcons/reduxSaga.png" height="90"/> <img src="images/myIcons/reduxToolkit.png" height="90"/> <img src="images/myIcons/api.png" height="90"/> <img src="images/myIcons/bootstrap.png" height="90"/> <img src="images/myIcons/reactBootstrap.png" height="90"/> 

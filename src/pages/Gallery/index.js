@@ -26,19 +26,20 @@ const Gallery = () => {
 
   return (
     <>
-      <Motion animatedElement={
-        <>
-          <p>
-            Here i've decided to show you my traveler side. I let my actions speak for who I am. You can see who I am at work when you see who I am in my personal life.
-          </p>
-          <p>
-            Through these photos you can get to know me better, see my personality or maybe you can remind yourself some of the places you've been. Each of the photo has its own story, shows moments, a fragment of my life.
-          </p>
-          <p>
-            Welcome to my journey!
-          </p>
-        </>
-      } />
+      <Motion
+        animatedElement={
+          <>
+            <p>
+              Here i've decided to show you my traveler side. I let my actions speak for who I am. You can see who I am at work when you see who I am in my personal life.
+            </p>
+            <p>
+              Through these photos you can get to know me better, see my personality or maybe you can remind yourself some of the places you've been. Each of the photo has its own story, shows moments, a fragment of my life.
+            </p>
+            <p>
+              Welcome to my journey!
+            </p>
+          </>
+        } />
       {status === "loading" ? <Loader></Loader> :
         <>
           <Row>

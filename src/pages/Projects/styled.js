@@ -20,6 +20,8 @@ export const StyledCard = styled(Card)`
 
 export const StyledButton = styled(Button).attrs(() => ({
   className: "w-100",
+  target: "_blank",
+  rel: "noopener noreferrer"
 }))`
   background-color: ${({ theme }) => theme.colors.buttonBackground}; 
   border: none;

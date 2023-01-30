@@ -1,8 +1,8 @@
 import { Row, Col, Container } from "react-bootstrap";
 import { Title } from "../Home/styled";
 import Extra from "./images/Extra.png"
-import { ContactList } from "./ContactList";
-import { motion } from "framer-motion";
+import { ContactData } from "./ContactData";
+import { Motion } from "./Motion";
 
 const Contact = () => {
   return (
@@ -22,25 +22,16 @@ const Contact = () => {
           md={4}
           lg={3}
         >
-          <motion.div
-            initial={{
-              x: -300,
-              opacity: 0
-            }}
-            animate={{
-              x: 0,
-              opacity: 1
-            }}
-            transition={{
-              type: "spring"
-            }}
-          >
-            <img
-              alt="Contact"
-              className="w-100"
-              src={Extra}
-            />
-          </motion.div>
+          <Motion
+            x={-300}
+            type={"spring"}
+            animatedElement={
+              <img
+                alt="Contact"
+                className="w-100"
+                src={Extra} />
+            }
+          />
         </Col>
         <Col
           xs={{
@@ -54,25 +45,19 @@ const Contact = () => {
           md={8}
           lg={8}
         >
-          <motion.div
-            initial={{
-              y: -300,
-              opacity: 0
-            }}
-            animate={{
-              y: 0,
-              opacity: 1
-            }}
-            transition={{
-              duration: 1
-            }}
-          >
-            <Title>
-              Let's create something <strong>together!</strong>
-            </Title>
-            We can talk in Italian and English, i will understand your Spanish, but to enter the creative world we can communicate in JavaScript in the React dialect.
-          </motion.div>
-          <ContactList />
+          <Motion
+            y={-300}
+            duration={1}
+            animatedElement={
+              <>
+                <Title>
+                  Let's create something <strong>together!</strong>
+                </Title>
+                We can talk in Italian and English, i will understand your Spanish, but to enter the creative world we can communicate in JavaScript in the React dialect.
+              </>
+            }
+          />
+          <ContactData />
         </Col>
       </Row>
     </Container>

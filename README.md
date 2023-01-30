@@ -1,7 +1,7 @@
-# <img src="images/myIcons/iconK.svg" height="30"/> Portfolio Website 
+# <img src="images/myIcons/iconK.png" height="30"/> Portfolio Website 
 <img src="images/show.gif" height="200"/>
 
-<img src="images/myIcons/icon.svg" height="15"/> Made by Klaudia Kępka
+<img src="images/myIcons/icon.png" height="15"/> Made by Klaudia Kępka
 
 ## <img src="images/myIcons/demo.png" height="20"/> Portfolio Demo Website:
 [Portfolio Demo Website](https://kepkaklaudia.github.io/portfolio/)

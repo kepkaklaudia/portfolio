@@ -27,6 +27,7 @@ import Card from 'react-bootstrap/Card';
 import { Row, Col } from "react-bootstrap";
 import { Loader } from "../../common/Loader";
 import { Error } from "./Error";
+import { Motion } from "./Motion";
 
 const Projects = () => {
   const dispatch = useDispatch();
@@ -38,7 +39,8 @@ const Projects = () => {
   }, [dispatch])
 
   return (
-    <>
+    <Motion animatedElement={
+      <>
         <div
           className="d-flex justify-content-center flex-wrap align-items-start"
         >
@@ -78,7 +80,7 @@ const Projects = () => {
               {repos.map(repo => (
                 repo.homepage &&
                 <Col
-                key={nanoid()}
+                  key={nanoid()}
                 >
                   <Card
                     as={StyledCard}
@@ -90,15 +92,16 @@ const Projects = () => {
                         {repo.name.replaceAll("-", " ")}
                       </Card.Title>
                       <Card.Text
-                        style={{ overflow: "auto", height: "150px" }}
+                        style={{
+                          overflow: "auto",
+                          height: "150px"
+                        }}
                       >
                         {repo.description}
                       </Card.Text>
                       <Row>
                         <Col>
                           <StyledButton
-                            target="_blank"
-                            rel="noopener noreferrer"
                             href={repo.homepage}
                           >
                             Demo
@@ -106,8 +109,6 @@ const Projects = () => {
                         </Col >
                         <Col>
                           <StyledButton
-                            target="_blank"
-                            rel="noopener noreferrer"
                             href={repo.html_url}
                           >
                             Code
@@ -120,7 +121,8 @@ const Projects = () => {
               ))}
             </Row>
         }
-    </>
+      </>
+    } />
   )
 };
 

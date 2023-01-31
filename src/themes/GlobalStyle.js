@@ -19,6 +19,7 @@ export const GlobalStyle = createGlobalStyle`
     min-height: 80vh;
     margin: 100px auto 0 auto;
     color: ${({ theme }) => theme.colors.text};
+    overflow-y: scroll;
   }
 
   .teal {

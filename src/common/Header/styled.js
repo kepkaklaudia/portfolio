@@ -2,9 +2,9 @@ import styled from "styled-components";
 import { Navbar } from "react-bootstrap";
 import { NavLink } from "react-router-dom";
 
-export const StyledNavbar = styled(Navbar).attrs(props => ({
-  bg: props.theme.colors.bg,
-  variant: props.theme.colors.variant,
+export const StyledNavbar = styled(Navbar).attrs(({ theme }) => ({
+  bg: theme.colors.bg,
+  variant: theme.colors.variant,
   expand: "lg",
   fixed: "top",
 }))``;
@@ -18,8 +18,8 @@ export const StyledNavBrand = styled(Navbar)`
   }
 `;
 
-export const Image = styled.img.attrs(props => ({
-  src: props.theme.icon,
+export const Image = styled.img.attrs(({ theme }) => ({
+  src: theme.icon,
   height: "30",
   className: "d-inline-block align-top",
   alt: "Navbar logo",

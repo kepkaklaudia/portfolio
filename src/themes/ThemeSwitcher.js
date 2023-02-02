@@ -9,6 +9,10 @@ export const ThemeContainer = styled.div`
   padding: 10px;
   border-radius: 20px;
   background: rgba(0, 0, 0, 0.4);
+
+  @media (max-width: 575.98px) {
+    display: none;
+  }
   `;
 
 export const ThemeButton = styled.button`

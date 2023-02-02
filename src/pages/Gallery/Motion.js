@@ -1,6 +1,6 @@
 import { motion } from "framer-motion";
 
-export const Motion = ({animatedElement}) =>{
+export const Motion = ({ animatedElement }) => {
   const initial = {
     opacity: 0,
     y: -100

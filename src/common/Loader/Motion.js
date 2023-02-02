@@ -4,7 +4,7 @@ const initial = {
   pathLength: 0
 };
 const transition = {
-  duration: 2,
+  duration: 1.5,
   repeat: Infinity,
   repeatType: "mirror",
   ease: "easeInOut"

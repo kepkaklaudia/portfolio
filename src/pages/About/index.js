@@ -2,9 +2,10 @@ import { Heading, LineThrough, StyledButton } from "./styled";
 import Accordion from 'react-bootstrap/Accordion';
 import { Motion } from "./Motion";
 
-const About = () => {
+const About = () => (
   <Accordion
     className="mb-4 mx-2"
+    defaultActiveKey="0"
   >
     <Motion
       x={-200}
@@ -72,6 +73,6 @@ const About = () => {
       }
     />
   </Accordion>
-};
+);
 
 export default About;

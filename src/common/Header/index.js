@@ -1,8 +1,7 @@
 import { Navbar, Container, Nav } from 'react-bootstrap';
 import { StyledNavLink, StyledNavBrand, StyledNavbar, StyledNavToggle, Image } from "./styled";
 
-const Header = () => {
-  return (
+const Header = () => (
     <StyledNavbar
       as={Navbar}
       collapseOnSelect
@@ -10,7 +9,7 @@ const Header = () => {
       <Container>
         <StyledNavBrand
           as={Navbar.Brand}
-          href="https://kepkaklaudia.github.io/portfolio/"
+          href="#"
         >
           <Image />{' '} Klaudia Kępka
         </StyledNavBrand>
@@ -62,6 +61,5 @@ const Header = () => {
       </Container>
     </StyledNavbar>
   );
-}
 
 export default Header;

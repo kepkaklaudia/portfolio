@@ -12,7 +12,7 @@ const Contact = () => {
       >
         <Col
           xs={{
-            span: 5,
+            span: 7,
             order: "last"
           }}
           sm={{

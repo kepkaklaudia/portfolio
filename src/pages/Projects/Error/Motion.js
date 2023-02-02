@@ -4,10 +4,12 @@ const initial = {
   pathLength: 0,
   opacity: 0
 };
+
 const animate = {
   pathLength: 1,
   opacity: 1
 };
+
 const transition = (i) => {
   return {
     opacity: 1,
@@ -16,8 +18,7 @@ const transition = (i) => {
   }
 };
 
-export const MotionLine1 = () => {
-  return (
+export const MotionLine1 = () => (
     <motion.line
       initial={initial}
       animate={animate}
@@ -31,10 +32,8 @@ export const MotionLine1 = () => {
       y2="70"
     />
   );
-};
 
-export const MotionLine2 = () => {
-  return (
+export const MotionLine2 = () => (
     <motion.line
       initial={initial}
       animate={animate}
@@ -48,6 +47,4 @@ export const MotionLine2 = () => {
       y2="0"
     />
   );
-};
-
 

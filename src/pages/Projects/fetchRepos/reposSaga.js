@@ -4,11 +4,11 @@ import { getRepos } from "./getRepos";
 
 function* fetchReposHandler() {
   try {
-    yield delay(4000);
+    yield delay(3000);
     const reposData = yield call(getRepos);
     yield put(fetchReposSuccess(reposData));
   } catch (error) {
-    yield delay(2000);
+    yield delay(1000);
     yield put(fetchError());
   }
 }

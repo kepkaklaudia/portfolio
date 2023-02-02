@@ -2,7 +2,7 @@ import styled from "styled-components";
 import { Card } from "react-bootstrap";
 import Button from 'react-bootstrap/Button';
 
-export const Icon = styled.div`{
+export const Icon = styled.div`
   padding: 10px;
   color: ${({ theme }) => theme.colors.icon};
   font-size: 75px;
@@ -18,7 +18,7 @@ export const Icon = styled.div`{
   @media (max-width: 575.98px) {
     font-size: 50px;
   }
-}`;
+`;
 
 export const StyledCard = styled(Card)`
   color: ${({ theme }) => theme.colors.cardText}; 
@@ -34,11 +34,11 @@ export const StyledButton = styled(Button).attrs(() => ({
   background-color: ${({ theme }) => theme.colors.buttonBackground}; 
   border: none;
 
-  &:hover{
+  &:hover {
     background-color: ${({ theme }) => theme.colors.buttonHover};
   }
     
-  &.btn-primary:active{
+  &.btn-primary:active {
     background-color: ${({ theme }) => theme.colors.buttonHover};
   }
 `;

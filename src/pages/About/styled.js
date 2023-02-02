@@ -6,6 +6,10 @@ export const LineThrough = styled.span`
 `;
 
 export const StyledButton = styled(Accordion)`
+  &:hover {
+    cursor: pointer;
+  }
+
   &:not(.collapsed) {
     background-color: ${({ theme }) => theme.colors.buttonHover};
     color: ${({ theme }) => theme.colors.accordionHeader};

@@ -10,7 +10,7 @@ const Gallery = () => {
   useEffect(() => {
     setTimeout(() => {
       setStatus("loaded");
-    }, 5000);
+    }, 3000);
   });
 
   return (
@@ -29,7 +29,7 @@ const Gallery = () => {
             </p>
           </>
         } />
-      {status === "loading" ? <Loader></Loader> :
+      {status === "loading" ? <Loader /> :
         <>
           <Row>
             <Col

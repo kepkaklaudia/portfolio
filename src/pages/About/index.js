@@ -5,7 +5,7 @@ import { Motion } from "./Motion";
 const About = () => {
   return (
     <Accordion
-      className="mb-4 mx-4"
+      className="mb-4 mx-2"
     >
       <Motion
         x={-200}

@@ -14,9 +14,6 @@ import { ThemeContainer, ThemeButton } from './themes/ThemeSwitcher';
 
 function App() {
   const [selectedTheme, setSelectedTheme] = useState(teal);
-  const ThemeChangeHandler = (theme) => {
-    setSelectedTheme(theme)
-  }
 
   return (
     <ThemeProvider
@@ -52,27 +49,27 @@ function App() {
         <ThemeContainer>
           <ThemeButton
             className={`teal ${selectedTheme === teal ? "selected" : ""}`}
-            onClick={() => ThemeChangeHandler(teal)}>
+            onClick={() => setSelectedTheme(teal)}>
           </ThemeButton>
           <ThemeButton
             className={`mint ${selectedTheme === mint ? "selected" : ""}`}
-            onClick={() => ThemeChangeHandler(mint)}>
+            onClick={() => setSelectedTheme(mint)}>
           </ThemeButton>
           <ThemeButton
             className={`blue ${selectedTheme === blue ? "selected" : ""}`}
-            onClick={() => ThemeChangeHandler(blue)}>
+            onClick={() => setSelectedTheme(blue)}>
           </ThemeButton>
           <ThemeButton
             className={`orange ${selectedTheme === orange ? "selected" : ""}`}
-            onClick={() => ThemeChangeHandler(orange)}>
+            onClick={() => setSelectedTheme(orange)}>
           </ThemeButton>
           <ThemeButton
             className={`magenta ${selectedTheme === magenta ? "selected" : ""}`}
-            onClick={() => ThemeChangeHandler(magenta)}>
+            onClick={() => setSelectedTheme(magenta)}>
           </ThemeButton>
           <ThemeButton
             className={`turquoise ${selectedTheme === turquoise ? "selected" : ""}`}
-            onClick={() => ThemeChangeHandler(turquoise)}>
+            onClick={() => setSelectedTheme(turquoise)}>
           </ThemeButton>
         </ThemeContainer>
       </Container>

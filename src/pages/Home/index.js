@@ -10,7 +10,6 @@ const Home = () => {
         className="align-items-center text-center justify-content-center"
       >
         <Col
-          sm={8}
           lg={7}
           className=" text-md-start"
         >
@@ -35,7 +34,8 @@ const Home = () => {
           />
         </Col>
         <Col
-          xs={5}
+          xs={8}
+          sm={6}
           md={5}
           lg={5}
         >

@@ -10,6 +10,14 @@ export const Icon = styled.div`{
   &:hover {
     color: ${({ theme }) => theme.colors.iconHover};
   }
+
+  @media (max-width: 767.98px) {
+    font-size: 65px;
+  }
+
+  @media (max-width: 575.98px) {
+    font-size: 50px;
+  }
 }`;
 
 export const StyledCard = styled(Card)`

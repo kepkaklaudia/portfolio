@@ -6,7 +6,7 @@ import { Chevron } from "./Chevron";
 import { Details } from "./Details";
 
 const Home = () => (
-  <Container className="mb-4">
+  <Container className="mb-5">
     <Row
       className="align-items-center text-center justify-content-center"
     >

@@ -7,9 +7,9 @@ const About = () => (
     <Motion
       x={150}
       animatedElement={
-        <Heading>
+        <h2>
           Hi! I'm...
-        </Heading>
+        </h2>
       } />
     <Accordion
       className="my-4 mx-2"

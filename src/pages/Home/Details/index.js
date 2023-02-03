@@ -1,7 +1,9 @@
+import React from "react";
 import { StyledLink } from "./styled";
 import { Col } from "react-bootstrap";
 import { Subtitle } from "../styled";
 import { Motion } from "./Motion";
+import { nanoid } from "@reduxjs/toolkit";
 
 export const Details = () => {
   const elements = [
@@ -34,7 +36,7 @@ export const Details = () => {
   return (
     <>
       {elements.map(({ subtitle, text, link, linkText }) =>
-        <>
+        <React.Fragment key={nanoid()}>
           <Col
             xs={12}
             className="mt-5 mb-4 w-75"
@@ -66,7 +68,7 @@ export const Details = () => {
               }
             />
           </Col>
-        </>
+        </React.Fragment>
       )}
     </>
   );

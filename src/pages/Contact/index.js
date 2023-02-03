@@ -1,6 +1,6 @@
 import { Row, Col, Container } from "react-bootstrap";
-import { Title } from "../Home/styled";
-import Extra from "./images/Extra.png"
+import { Title, Image } from "../Home/styled";
+import extra from "./images/extra.png"
 import { ContactData } from "./ContactData";
 import { Motion } from "./Motion";
 
@@ -25,10 +25,10 @@ const Contact = () => (
           x={-300}
           type={"spring"}
           animatedElement={
-            <img
+            <Image
               alt="Contact"
               className="w-100"
-              src={Extra} />
+              src={extra} />
           }
         />
       </Col>

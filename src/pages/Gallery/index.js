@@ -18,6 +18,9 @@ const Gallery = () => {
       <Motion
         animatedElement={
           <>
+            <h2>
+              My little photogallery!
+            </h2>
             <p>
               Here i've decided to show you my traveler side. I let my actions speak for who I am. You can see who I am at work when you see who I am in my personal life.
             </p>

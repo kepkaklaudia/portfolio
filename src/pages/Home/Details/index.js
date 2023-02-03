@@ -6,62 +6,34 @@ import { Motion } from "./Motion";
 export const Details = () => {
   const elements = [
     {
-      animatedElement1:
-        <>
-          <Subtitle>
-            Projects
-          </Subtitle>
-          Here you will find projects I have worked on and a list of technologies and tools that I use every day and which I am still learning.
-        </>,
-      animatedElement2:
-        <StyledLink to="/projects">
-          See my Projects!
-        </StyledLink>
+      subtitle: "Projects",
+      text: "Here you will find projects I have worked on and a list of technologies and tools that I use every day and which I am still learning.",
+      link: "/projects",
+      linkText: "See my Projects!",
     },
     {
-      animatedElement1:
-        <>
-          <Subtitle>
-            About
-          </Subtitle>
-          Read the short story of my life!
-        </>,
-      animatedElement2:
-        <StyledLink to="/about">
-          Read about me!
-        </StyledLink>
+      subtitle: "About",
+      text: "Read the short story of my life!",
+      link: "/about",
+      linkText: "Read about me!",
     },
     {
-      animatedElement1:
-        <>
-          <Subtitle>
-            Gallery
-          </Subtitle>
-          Get to know who I am through photos and see one of my greatest passions!
-        </>,
-      animatedElement2:
-        <StyledLink to="/gallery">
-          Go to Gallery!
-        </StyledLink>
+      subtitle: "Gallery",
+      text: "Get to know who I am through photos and see one of my greatest passions!",
+      link: "/gallery",
+      linkText: "Go to Gallery!",
     },
     {
-      animatedElement1:
-        <>
-          <Subtitle>
-            Contact
-          </Subtitle>
-          See my contact details.
-        </>,
-      animatedElement2:
-        <StyledLink to="/contact">
-          Let's get in touch!
-        </StyledLink>
+      subtitle: "Contact",
+      text: "See my contact details.",
+      link: "/contact",
+      linkText: "Let's get in touch!",
     },
   ];
 
   return (
     <>
-      {elements.map(element =>
+      {elements.map(({ subtitle, text, link, linkText }) =>
         <>
           <Col
             xs={12}
@@ -69,7 +41,14 @@ export const Details = () => {
           >
             <Motion
               x={-200}
-              animatedElement={element.animatedElement1}
+              animatedElement={
+                <>
+                  <Subtitle>
+                    {subtitle}
+                  </Subtitle>
+                  {text}
+                </>
+              }
             />
           </Col>
           <Col
@@ -78,7 +57,13 @@ export const Details = () => {
           >
             <Motion
               x={200}
-              animatedElement={element.animatedElement2}
+              animatedElement={
+                <StyledLink
+                  to={link}
+                >
+                  {linkText}
+                </StyledLink>
+              }
             />
           </Col>
         </>

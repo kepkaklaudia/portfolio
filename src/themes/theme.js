@@ -1,12 +1,12 @@
-import TealK from "./icon/TealK.svg"
-import MintK from "./icon/MintK.svg"
-import VeriPeriK from "./icon/VeriPeriK.svg"
-import OrangeK from "./icon/OrangeK.svg"
-import MagentaK from "./icon/MagentaK.svg"
+import tealK from "./icon/tealK.svg";
+import mintK from "./icon/mintK.svg";
+import veriPeriK from "./icon/veriPeriK.svg";
+import orangeK from "./icon/orangeK.svg";
+import magentaK from "./icon/magentaK.svg";
 
 export const teal = {
   name: "teal",
-  icon: TealK,
+  icon: tealK,
   colors: {
     bg: "dark",
     variant: "dark",
@@ -28,7 +28,7 @@ export const teal = {
 
 export const mint = {
   name: "mint",
-  icon: MintK,
+  icon: mintK,
   colors: {
     bg: "light",
     variant: "light",
@@ -50,7 +50,7 @@ export const mint = {
 
 export const blue = {
   name: "blue",
-  icon: VeriPeriK,
+  icon: veriPeriK,
   colors: {
     bg: "dark",
     variant: "dark",
@@ -72,7 +72,7 @@ export const blue = {
 
 export const orange = {
   name: "orange",
-  icon: OrangeK,
+  icon: orangeK,
   colors: {
     bg: "dark",
     variant: "dark",
@@ -94,7 +94,7 @@ export const orange = {
 
 export const magenta = {
   name: "magenta",
-  icon: MagentaK,
+  icon: magentaK,
   colors: {
     bg: "light",
     variant: "light",
@@ -116,7 +116,7 @@ export const magenta = {
 
 export const turquoise = {
   name: "turquoise",
-  icon: TealK,
+  icon: tealK,
   colors: {
     bg: "dark",
     variant: "dark",

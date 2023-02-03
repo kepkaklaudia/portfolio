@@ -21,7 +21,6 @@ export const Motion = ({ x, animatedElement }) => {
       whileInView={whileInView}
       transition={transition}
       viewport={viewport}
-      x
     >
       {animatedElement}
     </motion.div>

@@ -1,89 +1,49 @@
 import { Image } from "react-bootstrap";
-import France from "./images/France.jpg";
-import Milano from "./images/Milano.jpg";
-import Spain from "./images/Spain.jpg";
-import Italy from "./images/Italy.jpg";
-import France1 from "./images/France1.jpg";
-import Portugal from "./images/Portugal.jpg";
-import Spain2 from "./images/Spain2.jpg";
-import Spain3 from "./images/Spain3.jpg";
-import Spain4 from "./images/Spain4.jpg";
-import Cracow from "./images/Cracow.jpg";
-import LaSalette from "./images/LaSalette.jpg";
-import Germany from "./images/Germany.jpg";
+import france from "./images/france.jpg";
+import milano from "./images/milano.jpg";
+import spain from "./images/spain.jpg";
+import italy from "./images/italy.jpg";
+import france1 from "./images/france1.jpg";
+import portugal from "./images/portugal.jpg";
+import spain2 from "./images/spain2.jpg";
+import spain3 from "./images/spain3.jpg";
+import spain4 from "./images/spain4.jpg";
+import cracow from "./images/cracow.jpg";
+import laSalette from "./images/laSalette.jpg";
+import germany from "./images/germany.jpg";
 
 export const ImageBlock1 = () => (
-  <>
-    <Image
-      src={France}
-      className="w-100 shadow-1-strong rounded mb-4"
-      alt="France"
-    />
-    <Image
-      src={Milano}
-      className="w-100 shadow-1-strong rounded mb-4"
-      alt="Milano"
-    />
-    <Image
-      src={Spain}
-      className="w-100 shadow-1-strong rounded mb-4"
-      alt="Spain"
-    />
-    <Image
-      src={Italy}
-      className="w-100 shadow-1-strong rounded mb-4"
-      alt="Italy"
-    />
-  </>
+  [france, milano, spain, italy]
+    .map((element) => (
+      <Image
+        key={element}
+        className="w-100 shadow-1-strong rounded mb-4"
+        src={element}
+        alt={element}
+      />
+    ))
 );
 
 export const ImageBlock2 = () => (
-  <>
-    <Image
-      src={France1}
-      className="w-100 shadow-1-strong rounded mb-4"
-      alt="France1"
-    />
-    <Image
-      src={Portugal}
-      className="w-100 shadow-1-strong rounded mb-4"
-      alt="Portugal"
-    />
-    <Image
-      src={Spain2}
-      className="w-100 shadow-1-strong rounded mb-4"
-      alt="Spain2"
-    />
-    <Image
-      src={Spain3}
-      className="w-100 shadow-1-strong rounded mb-4"
-      alt="Spain3"
-    />
-  </>
+  [france1, portugal, spain2, spain3]
+    .map((element) => (
+      <Image
+        key={element}
+        className="w-100 shadow-1-strong rounded mb-4"
+        src={element}
+        alt={element}
+      />
+    ))
 );
 
 export const ImageBlock3 = () => (
-  <>
-    <Image
-      src={Spain4}
-      className="w-100 shadow-1-strong rounded mb-4"
-      alt="Spain4"
-    />
-    <Image
-      src={Cracow}
-      className="w-100 shadow-1-strong rounded mb-4"
-      alt="Cracow"
-    />
-    <Image
-      src={LaSalette}
-      className="w-100 shadow-1-strong rounded mb-4"
-      alt="LaSalette"
-    />
-    <Image
-      src={Germany}
-      className="w-100 shadow-1-strong rounded mb-4"
-      alt="Germany"
-    />
-  </>
+  [spain4, cracow, laSalette, germany]
+    .map((element) => (
+      <Image
+        key={element}
+        className="w-100 shadow-1-strong rounded mb-4"
+        src={element}
+        alt={element}
+      />
+    ))
 );
-

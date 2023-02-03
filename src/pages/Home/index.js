@@ -1,6 +1,6 @@
 import { Row, Col, Container } from "react-bootstrap";
-import { Heading, Title, Subtitle, Image, StyledLink } from "./styled";
-import Welcome from "./images/Welcome.png";
+import { Heading, Title, Subtitle, Image } from "./styled";
+import welcome from "./images/welcome.png";
 import { ImageMotion, TitleMotion, HeadingMotion } from "./Motion";
 import { Chevron } from "./Chevron";
 import { Details } from "./Details";
@@ -44,8 +44,8 @@ const Home = () => (
           animatedElement={
             <Image
               className="w-100"
-              src={Welcome}
-              alt="Welcome"
+              src={welcome}
+              alt="welcome"
             />
           }
         />

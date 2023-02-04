@@ -31,9 +31,13 @@ export const StyledNavToggle = styled(Navbar)`
   transition: 0.3s;
   border: none;
 
-  &:focus{
+  &:focus {
     box-shadow: none;
     border: var(--bs-border-width) solid var(--bs-navbar-toggler-border-color);
+  }
+
+  &.navbar-toggler {
+    margin-right: 0 !important;
   }
 `;
 

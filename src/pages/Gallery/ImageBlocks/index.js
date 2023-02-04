@@ -19,6 +19,7 @@ export const ImageBlock1 = () => {
   const [show, setShow] = useState(false);
   const handleClose = () => setShow(false);
   const handleShow = () => setShow(true);
+  const isTablet = window.innerWidth <= 767.98;
 
   const viewImage = (element, index) => {
     setData({ element, index });
@@ -39,8 +40,13 @@ export const ImageBlock1 = () => {
             />
           </>
         ))}
+      {isTablet ? "" :
       <>
-        <Modal show={show} onHide={handleClose} centered>
+        <Modal 
+        show={show} 
+        onHide={handleClose} 
+        centered
+        >
           <StyledImage
             key={data.index}
             className="w-100 shadow-1-strong rounded"
@@ -49,7 +55,8 @@ export const ImageBlock1 = () => {
             onClick={handleClose}
           />
         </Modal>
-      </>
+        </>
+        }     
     </>
   )
 };
@@ -59,6 +66,7 @@ export const ImageBlock2 = () => {
   const [show, setShow] = useState(false);
   const handleClose = () => setShow(false);
   const handleShow = () => setShow(true);
+  const isTablet = window.innerWidth <= 767.98;
 
   const viewImage = (element, index) => {
     setData({ element, index });
@@ -79,8 +87,13 @@ export const ImageBlock2 = () => {
             />
           </>
         ))}
+      {isTablet ? "" :
       <>
-        <Modal show={show} onHide={handleClose} centered>
+        <Modal 
+        show={show} 
+        onHide={handleClose} 
+        centered
+        >
           <StyledImage
             key={data.index}
             className="w-100 shadow-1-strong rounded"
@@ -89,7 +102,8 @@ export const ImageBlock2 = () => {
             onClick={handleClose}
           />
         </Modal>
-      </>
+        </>
+        }     
     </>
   )
 };
@@ -99,6 +113,7 @@ export const ImageBlock3 = () => {
   const [show, setShow] = useState(false);
   const handleClose = () => setShow(false);
   const handleShow = () => setShow(true);
+  const isTablet = window.innerWidth <= 767.98;
 
   const viewImage = (element, index) => {
     setData({ element, index });
@@ -119,8 +134,13 @@ export const ImageBlock3 = () => {
             />
           </>
         ))}
+      {isTablet ? "" :
       <>
-        <Modal show={show} onHide={handleClose} centered>
+        <Modal 
+        show={show} 
+        onHide={handleClose} 
+        centered
+        >
           <StyledImage
             key={data.index}
             className="w-100 shadow-1-strong rounded"
@@ -129,7 +149,8 @@ export const ImageBlock3 = () => {
             onClick={handleClose}
           />
         </Modal>
-      </>
+        </>
+        }     
     </>
   )
 };

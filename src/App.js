@@ -11,9 +11,18 @@ import Header from './common/Header';
 import { GlobalStyle } from './themes/GlobalStyle';
 import { teal, mint, blue, orange, magenta, turquoise } from './themes/theme';
 import { ThemeContainer, ThemeButton } from './themes/ThemeSwitcher';
+import { nanoid } from '@reduxjs/toolkit';
 
 function App() {
   const [selectedTheme, setSelectedTheme] = useState(teal);
+  const themes = [
+    teal,
+    mint,
+    blue,
+    orange,
+    magenta,
+    turquoise
+  ];
 
   return (
     <ThemeProvider
@@ -47,30 +56,13 @@ function App() {
           </Routes>
         </HashRouter>
         <ThemeContainer>
-          <ThemeButton
-            className={`teal ${selectedTheme === teal ? "selected" : ""}`}
-            onClick={() => setSelectedTheme(teal)}>
-          </ThemeButton>
-          <ThemeButton
-            className={`mint ${selectedTheme === mint ? "selected" : ""}`}
-            onClick={() => setSelectedTheme(mint)}>
-          </ThemeButton>
-          <ThemeButton
-            className={`blue ${selectedTheme === blue ? "selected" : ""}`}
-            onClick={() => setSelectedTheme(blue)}>
-          </ThemeButton>
-          <ThemeButton
-            className={`orange ${selectedTheme === orange ? "selected" : ""}`}
-            onClick={() => setSelectedTheme(orange)}>
-          </ThemeButton>
-          <ThemeButton
-            className={`magenta ${selectedTheme === magenta ? "selected" : ""}`}
-            onClick={() => setSelectedTheme(magenta)}>
-          </ThemeButton>
-          <ThemeButton
-            className={`turquoise ${selectedTheme === turquoise ? "selected" : ""}`}
-            onClick={() => setSelectedTheme(turquoise)}>
-          </ThemeButton>
+          {themes.map(theme => (
+            <ThemeButton
+              key={nanoid()}
+              className={`${theme.name} ${selectedTheme === theme ? "selected" : ""}`}
+              onClick={() => setSelectedTheme(theme)}>
+            </ThemeButton>
+          ))}
         </ThemeContainer>
       </Container>
     </ ThemeProvider>

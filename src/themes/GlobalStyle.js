@@ -21,6 +21,11 @@ export const GlobalStyle = createGlobalStyle`
     color: ${({ theme }) => theme.colors.text};
     overflow-y: scroll;
     transition: background 0.3s;
+
+    &.modal-open {
+      overflow-y: scroll !important; ${ /* prevent moving while Modal active */'' }
+      padding-right: 0 !important; ${ /* prevent moving while Modal active */'' }
+    }
   }
 
   .teal {

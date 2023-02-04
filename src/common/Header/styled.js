@@ -7,7 +7,9 @@ export const StyledNavbar = styled(Navbar).attrs(({ theme }) => ({
   variant: theme.colors.variant,
   expand: "lg",
   fixed: "top",
-}))``;
+}))`
+  padding-right: 0 !important;  ${ /* prevent moving while Modal active */'' }
+`;
 
 export const StyledNavBrand = styled(Navbar)`
   transition: 0.3s;

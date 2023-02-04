@@ -1,6 +1,12 @@
 import styled from "styled-components";
 import { Link } from "react-router-dom";
 
+export const Subtitle = styled.h3` 
+  font-size: 40px;
+  color: ${({ theme }) => theme.colors.subtitle};
+  margin-top: 70px;
+`;
+
 export const StyledLink = styled(Link)` 
   text-decoration: none;
   padding: 15px 60px;

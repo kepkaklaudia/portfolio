@@ -2,7 +2,23 @@ import { Col, Row } from "react-bootstrap";
 import { useEffect, useState } from "react";
 import { Loader } from "../../common/Loader";
 import { Motion } from "./Motion";
-import { ImageBlock1, ImageBlock2, ImageBlock3 } from "./ImageBlocks";
+import { ImageModalBlock } from "./ImageModalBlock";
+import france from "./images/france.jpg";
+import milano from "./images/milano.jpg";
+import spain from "./images/spain.jpg";
+import italy from "./images/italy.jpg";
+import france1 from "./images/france1.jpg";
+import portugal from "./images/portugal.jpg";
+import spain2 from "./images/spain2.jpg";
+import spain3 from "./images/spain3.jpg";
+import spain4 from "./images/spain4.jpg";
+import cracow from "./images/cracow.jpg";
+import laSalette from "./images/laSalette.jpg";
+import germany from "./images/germany.jpg";
+
+const imageArray1 = [france, milano, spain, italy];
+const imageArray2 = [france1, portugal, spain2, spain3];
+const imageArray3 = [spain4, cracow, laSalette, germany];
 
 const Gallery = () => {
   const [status, setStatus] = useState("loading");
@@ -40,19 +56,19 @@ const Gallery = () => {
               md={4}
               className="mb-4 mb-lg-0"
             >
-              <ImageBlock1 />
+              <ImageModalBlock array={imageArray1} />
             </Col>
             <Col
               md={4}
               className="mb-4 mb-lg-0"
             >
-              <ImageBlock2 />
+              <ImageModalBlock array={imageArray2} />
             </Col>
             <Col
               md={4}
               className="mb-4 mb-lg-0"
             >
-              <ImageBlock3 />
+              <ImageModalBlock array={imageArray3}/>
             </Col>
           </Row>
         </>

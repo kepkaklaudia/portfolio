@@ -1,3 +1,4 @@
+import React from "react";
 import { useState } from "react";
 import { Modal } from "react-bootstrap";
 import france from "../images/france.jpg";
@@ -30,7 +31,7 @@ export const ImageBlock1 = () => {
     <>
       {[france, milano, spain, italy]
         .map((element, index) => (
-          <>
+          <React.Fragment key={index}>
             <StyledImage
               key={index}
               className="w-100 shadow-1-strong rounded mb-4"
@@ -38,25 +39,25 @@ export const ImageBlock1 = () => {
               alt={element}
               onClick={() => viewImage(element, index)}
             />
-          </>
+          </React.Fragment>
         ))}
       {isTablet ? "" :
-      <>
-        <Modal 
-        show={show} 
-        onHide={handleClose} 
-        centered
-        >
-          <StyledImage
-            key={data.index}
-            className="w-100 shadow-1-strong rounded"
-            src={data.element}
-            alt={data.element}
-            onClick={handleClose}
-          />
-        </Modal>
+        <>
+          <Modal
+            show={show}
+            onHide={handleClose}
+            centered
+          >
+            <StyledImage
+              key={data.index}
+              className="w-100 shadow-1-strong rounded"
+              src={data.element}
+              alt={data.element}
+              onClick={handleClose}
+            />
+          </Modal>
         </>
-        }     
+      }
     </>
   )
 };
@@ -77,7 +78,7 @@ export const ImageBlock2 = () => {
     <>
       {[france1, portugal, spain2, spain3]
         .map((element, index) => (
-          <>
+          <React.Fragment key={index}>
             <StyledImage
               key={index}
               className="w-100 shadow-1-strong rounded mb-4"
@@ -85,25 +86,25 @@ export const ImageBlock2 = () => {
               alt={element}
               onClick={() => viewImage(element, index)}
             />
-          </>
+          </React.Fragment>
         ))}
       {isTablet ? "" :
-      <>
-        <Modal 
-        show={show} 
-        onHide={handleClose} 
-        centered
-        >
-          <StyledImage
-            key={data.index}
-            className="w-100 shadow-1-strong rounded"
-            src={data.element}
-            alt={data.element}
-            onClick={handleClose}
-          />
-        </Modal>
+        <>
+          <Modal
+            show={show}
+            onHide={handleClose}
+            centered
+          >
+            <StyledImage
+              key={data.index}
+              className="w-100 shadow-1-strong rounded"
+              src={data.element}
+              alt={data.element}
+              onClick={handleClose}
+            />
+          </Modal>
         </>
-        }     
+      }
     </>
   )
 };
@@ -124,7 +125,7 @@ export const ImageBlock3 = () => {
     <>
       {[spain4, cracow, laSalette, germany]
         .map((element, index) => (
-          <>
+          <React.Fragment key={index}>
             <StyledImage
               key={index}
               className="w-100 shadow-1-strong rounded mb-4"
@@ -132,25 +133,25 @@ export const ImageBlock3 = () => {
               alt={element}
               onClick={() => viewImage(element, index)}
             />
-          </>
+          </React.Fragment>
         ))}
       {isTablet ? "" :
-      <>
-        <Modal 
-        show={show} 
-        onHide={handleClose} 
-        centered
-        >
-          <StyledImage
-            key={data.index}
-            className="w-100 shadow-1-strong rounded"
-            src={data.element}
-            alt={data.element}
-            onClick={handleClose}
-          />
-        </Modal>
+        <>
+          <Modal
+            show={show}
+            onHide={handleClose}
+            centered
+          >
+            <StyledImage
+              key={data.index}
+              className="w-100 shadow-1-strong rounded"
+              src={data.element}
+              alt={data.element}
+              onClick={handleClose}
+            />
+          </Modal>
         </>
-        }     
+      }
     </>
   )
 };

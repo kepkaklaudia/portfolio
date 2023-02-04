@@ -20,6 +20,7 @@ export const GlobalStyle = createGlobalStyle`
     margin: 100px auto 0 auto;
     color: ${({ theme }) => theme.colors.text};
     overflow-y: scroll;
+    overflow-x: hidden;
     transition: background 0.3s;
 
     &.modal-open {

@@ -1,7 +1,6 @@
 import React from "react";
-import { StyledLink } from "./styled";
+import { StyledLink, Subtitle } from "./styled";
 import { Col } from "react-bootstrap";
-import { Subtitle } from "../styled";
 import { Motion } from "./Motion";
 import { nanoid } from "@reduxjs/toolkit";
 
@@ -55,7 +54,7 @@ export const Details = () => {
           </Col>
           <Col
             xs={12}
-            className="my-2"
+            className="mt-4 mb-5"
           >
             <Motion
               x={200}

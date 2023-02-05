@@ -18,33 +18,89 @@ import {
   SiStyledcomponents
 } from "react-icons/si";
 import { ImGit } from "react-icons/im";
-import { Icon } from "./styled";
+import { Icon, StyledTooltip } from "./styled";
 import { nanoid } from 'nanoid';
+import OverlayTrigger from 'react-bootstrap/OverlayTrigger';
 
-export const IconsBlock = () =>{
+export const IconsBlock = () => {
   return ([
-    <IoLogoHtml5 title="HTML" />,
-    <IoLogoCss3 title="CSS" />,
-    <IoLogoJavascript title="JavaScript" />,
-    <SiReact title="React" />,
-    <SiReactrouter title="React Router" />,
-    <SiRedux title="Redux" />,
-    <SiReduxsaga title="Redux Saga" />,
-    <SiStyledcomponents title="Styled Components" />,
-    <SiFramer title="Framer" />,
-    <SiBootstrap title="Bootstrap" />,
-    <ImGit title="Git" />,
-    <IoLogoGithub title="GitHub" />,
-    <SiVisualstudiocode title="Visual Studio Code" />,
-    <SiCanva title="Canva" />,
-    <SiSlack title="Slack" />,
-    <IoLogoWindows title="Windows" />
-  ].map((index) => (
-    <Icon
+    {
+      logo: <IoLogoHtml5 />,
+      title: "HTML"
+    },
+    {
+      logo: <IoLogoCss3 />,
+      title: "CSS"
+    },
+    {
+      logo: <IoLogoJavascript />,
+      title: "JavaScript"
+    },
+    {
+      logo: <SiReact />,
+      title: "React"
+    },
+    {
+      logo: <SiReactrouter />,
+      title: "React Router"
+    },
+    {
+      logo: <SiRedux />,
+      title: "Redux"
+    },
+    {
+      logo: <SiReduxsaga />,
+      title: "Redux Saga"
+    },
+    {
+      logo: <SiStyledcomponents />,
+      title: "Styled Components"
+    },
+    {
+      logo: <SiFramer />,
+      title: "Framer"
+    },
+    {
+      logo: <SiBootstrap />,
+      title: "Bootstrap"
+    },
+    {
+      logo: <ImGit />,
+      title: "Git"
+    },
+    {
+      logo: <IoLogoGithub />,
+      title: "GitHub"
+    },
+    {
+      logo: <SiVisualstudiocode />,
+      title: "Visual Studio Code"
+    },
+    {
+      logo: <SiCanva />,
+      title: "Canva"
+    },
+    {
+      logo: <SiSlack />,
+      title: "Slack"
+    },
+    {
+      logo: <IoLogoWindows />,
+      title: "Windows"
+    },
+  ].map(({ logo, title }) => (
+    <OverlayTrigger
       key={nanoid()}
+      overlay={
+        <StyledTooltip>
+          {title}
+        </StyledTooltip>
+      }
     >
-      {index}
-    </Icon>
+      <Icon>
+        {logo}
+      </Icon>
+    </OverlayTrigger>
   ))
   );
 };

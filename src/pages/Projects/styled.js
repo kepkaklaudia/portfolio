@@ -1,6 +1,7 @@
 import styled from "styled-components";
 import { Card } from "react-bootstrap";
 import Button from 'react-bootstrap/Button';
+import Tooltip from 'react-bootstrap/Tooltip';
 
 export const Icon = styled.div`
   padding: 10px;
@@ -41,4 +42,8 @@ export const StyledButton = styled(Button).attrs(() => ({
   &.btn-primary:active {
     background-color: ${({ theme }) => theme.colors.buttonHover};
   }
+`;
+
+export const StyledTooltip = styled(Tooltip)`
+  inset: auto auto -30px 0 !important;
 `;

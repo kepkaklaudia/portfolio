@@ -1,31 +1,31 @@
 {
   "files": {
-    "main.js": "/portfolio/static/js/main.3823bc73.js",
+    "main.js": "/portfolio/static/js/main.56947314.js",
     "static/js/787.1ed0c42c.chunk.js": "/portfolio/static/js/787.1ed0c42c.chunk.js",
-    "static/media/welcome.png": "/portfolio/static/media/welcome.0cd4630a7b368af610d6.png",
-    "static/media/milano.jpg": "/portfolio/static/media/milano.3fa8d830c134acd6948a.jpg",
-    "static/media/spain4.jpg": "/portfolio/static/media/spain4.a61732deba7216494311.jpg",
-    "static/media/laSalette.jpg": "/portfolio/static/media/laSalette.2b834e5774a2f2dc6cad.jpg",
-    "static/media/cracow.jpg": "/portfolio/static/media/cracow.78d5f67184ce86af1913.jpg",
-    "static/media/portugal.jpg": "/portfolio/static/media/portugal.9bddc1e40a260a1e3787.jpg",
-    "static/media/spain2.jpg": "/portfolio/static/media/spain2.bf55f9f9b429553555c3.jpg",
-    "static/media/spain3.jpg": "/portfolio/static/media/spain3.27d92cd80ff46d7a5968.jpg",
-    "static/media/france1.jpg": "/portfolio/static/media/france1.32aaa4d69a867f48b4bf.jpg",
-    "static/media/italy.jpg": "/portfolio/static/media/italy.7de736f71e4b6448b8f5.jpg",
-    "static/media/germany.jpg": "/portfolio/static/media/germany.18109db23a297f426326.jpg",
-    "static/media/extra.png": "/portfolio/static/media/extra.4bdedd3ab374f97694fe.png",
-    "static/media/france.jpg": "/portfolio/static/media/france.9c78fc2ecd68a175e968.jpg",
-    "static/media/spain.jpg": "/portfolio/static/media/spain.75464344857361e7792a.jpg",
+    "static/media/welcome.png": "/portfolio/static/media/welcome.fd7ff264bfd06231921b.png",
+    "static/media/extra.png": "/portfolio/static/media/extra.ec18f62914cb37e69d65.png",
+    "static/media/milano.jpg": "/portfolio/static/media/milano.b77f6e1b55b234df700b.jpg",
+    "static/media/germany.jpg": "/portfolio/static/media/germany.3102521e20cce1fe7c21.jpg",
+    "static/media/laSalette.jpg": "/portfolio/static/media/laSalette.a8d732e52db0298d93b6.jpg",
+    "static/media/france1.jpg": "/portfolio/static/media/france1.13cf512a50846ad3e9c9.jpg",
+    "static/media/france.jpg": "/portfolio/static/media/france.34117d508bcd0453b39d.jpg",
+    "static/media/portugal.jpg": "/portfolio/static/media/portugal.dfd400e82df088714952.jpg",
+    "static/media/spain4.jpg": "/portfolio/static/media/spain4.244ea0090bd77cf19ad5.jpg",
+    "static/media/spain2.jpg": "/portfolio/static/media/spain2.ae036486c35eab35df03.jpg",
+    "static/media/spain.jpg": "/portfolio/static/media/spain.53d991dc7dd8a787fe54.jpg",
+    "static/media/cracow.jpg": "/portfolio/static/media/cracow.c499688acb869706da96.jpg",
+    "static/media/spain3.jpg": "/portfolio/static/media/spain3.5ae5b6f848c53edfce3b.jpg",
+    "static/media/italy.jpg": "/portfolio/static/media/italy.eeddd0dc8c9cd3dbab4a.jpg",
     "static/media/orangeK.svg": "/portfolio/static/media/orangeK.6908bf717d8a0480443c05e3fefee713.svg",
     "static/media/tealK.svg": "/portfolio/static/media/tealK.745e063178e93fff54509778913a5959.svg",
     "static/media/magentaK.svg": "/portfolio/static/media/magentaK.86b21f85af6afac9ca2e0874fad8054c.svg",
     "static/media/mintK.svg": "/portfolio/static/media/mintK.423c83dc29fd3991e7c88128da631a0e.svg",
     "static/media/veriPeriK.svg": "/portfolio/static/media/veriPeriK.a02cd37fa9278890ac9c8bed07f8c2f7.svg",
     "index.html": "/portfolio/index.html",
-    "main.3823bc73.js.map": "/portfolio/static/js/main.3823bc73.js.map",
+    "main.56947314.js.map": "/portfolio/static/js/main.56947314.js.map",
     "787.1ed0c42c.chunk.js.map": "/portfolio/static/js/787.1ed0c42c.chunk.js.map"
   },
   "entrypoints": [
-    "static/js/main.3823bc73.js"
+    "static/js/main.56947314.js"
   ]
 }

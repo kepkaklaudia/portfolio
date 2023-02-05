@@ -1,5 +1,5 @@
 import { ChevronMotion } from "./Motion";
-import { Wrapper } from "./styled";
+import { Wrapper, ChevronSvg } from "./styled";
 import { useRef } from "react";
 
 export const Chevron = () => {
@@ -16,7 +16,7 @@ export const Chevron = () => {
     <>
       <Wrapper>
         <ChevronMotion animatedElement={
-          <svg
+          <ChevronSvg
             onClick={() => scrollTo(section)}
             xmlns="http://www.w3.org/2000/svg"
             width="50"
@@ -27,7 +27,7 @@ export const Chevron = () => {
             <path
               fillRule="evenodd"
               d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z" />
-          </svg>
+          </ChevronSvg>
         } />
       </Wrapper>
       <div ref={section} />

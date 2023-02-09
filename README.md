@@ -29,7 +29,7 @@ Both when downloading data from the API or simply loading the photo gallery, the
 ## Responsiveness
 The site has been designed for users of all devices - from 🖥 computers, through tablets, to mobile devices📱. The layout changes depending on the screen size so that each of the subpages is displayed correctly.
 
-<img src="images/responsive.PNG" height="200"/>
+<img src="images/responsive.PNG" height="300"/>
 </div>
 
 ## Getting Started with Create React App

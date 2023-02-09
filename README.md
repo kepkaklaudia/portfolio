@@ -17,17 +17,17 @@ In order to list projects, with links to demos and repositories, i used GitHub A
 
 If fetching data from the API fails, the ❌error message will be presented to the user.
 
-<img src="images/error.gif" height="100"/>
+<img src="images/error.gif" height="145"/>
 
 ## Loading state
 Both when downloading data from the API or simply loading the photo gallery, the user will see the ⏳loading status. The animation effect was achieved using SVG path animation in Framer Motion.
 
-<img src="images/loading.gif" height="120"/>
+<img src="images/loading.gif" height="150"/>
 
 ## Responsiveness
 The site has been designed for users of all devices - from 🖥 computers, through tablets, to mobile devices📱. The layout changes depending on the screen size so that each of the subpages is displayed correctly.
 
-<img src="images/responsive.png" height="200"/>
+<img src="images/responsive.PNG" height="200"/>
 
 ## Getting Started with Create React App
 
